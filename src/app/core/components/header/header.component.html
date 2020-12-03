@@ -1,0 +1,159 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark">
+  <span class="navbar-brand">{{ title }}</span>
+  <button
+    (click)="isMenuCollapsed = !isMenuCollapsed"
+    aria-expanded="false"
+    class="navbar-toggler"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav ml-auto" ngbNav routerLinkActive="active">
+      <li class="nav-item" ngbNavItem>
+        <a
+          (click)="isMenuCollapsed = true"
+          [routerLink]="'/first'"
+          class="nav-link"
+          ngbNavLink
+        >
+          First
+        </a>
+      </li>
+      <li class="nav-item" ngbNavItem>
+        <a
+          (click)="isMenuCollapsed = true"
+          [routerLink]="'/second'"
+          class="nav-link"
+          ngbNavLink
+        >
+          Second
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+<nav
+  class="navbar navbar-expand-lg navbar-dark"
+  style="border-bottom: solid 2px #7da1da"
+  style="height: 100px"
+>
+  <div class="container">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="navbar-brand"
+      style="text-align: center"
+      >{{ title }}</a
+    >
+    <button
+      (click)="isMenuCollapsed = !isMenuCollapsed"
+      aria-expanded="false"
+      class="navbar-toggler"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav ml-auto" ngbNav routerLinkActive="active">
+        <li class="nav-item" ngbNavItem>
+          <a class="nav-link py-0 pr-3" href="https://google.com"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+        <li class="nav-item" ngbNavItem>
+          <a class="nav-link py-0 pr-3" href="https://google.com"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li class="nav-item" ngbNavItem>
+          <a class="nav-link py-0 pr-3" href="https://google.com"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li class="nav-item" ngbNavItem>
+          <a class="nav-link py-0 pr-3" href="https://google.com"
+            ><i class="fa fa-youtube"></i
+          ></a>
+        </li>
+        <li class="nav-item" ngbNavItem>
+          <a class="nav-link py-0 pr-3" href="https://google.com"
+            ><i class="fa fa-snapchat"></i
+          ></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href=""
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            {{ "HOME.SELECT" | translate }}
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div #langSelect *ngFor="let lang of translate.getLangs()">
+              <option
+                class="dropdown-item"
+                [value]="lang"
+                [selected]="lang === translate.currentLang"
+                (click)="translate.use(lang)"
+                (click)="onOptionsSelected(lang)"
+              >
+                {{ lang }}
+              </option>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div *ngIf="account; then loggedIn; else loggedOut"></div>
+      <ng-template #loggedIn>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=""
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              {{ account.username }}
+            </a>
+            <div *ngIf="account.role == admin; then admin; else user"></div>
+            <ng-template #admin>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="profile">Profile</a>
+                <a class="dropdown-item" href="profile">Admin</a>
+                <div class="dropdown-divider"></div>
+                <a (click)="logout()" class="nav-item nav-link">Logout</a>
+              </div>
+            </ng-template>
+            <ng-template #user>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="profile">Profile</a>
+                <div class="dropdown-divider"></div>
+                <a (click)="logout()" class="nav-item nav-link">Logout</a>
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+      </ng-template>
+      <ng-template #loggedOut>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="profile">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account/register">Register</a>
+          </li>
+        </ul>
+      </ng-template> -->
+  </div>
+</nav>
