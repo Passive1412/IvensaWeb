@@ -1,22 +1,25 @@
-$bgDefault: #ffffff;
+$bgDefault: blue;
 $bgHighlight: #7537d5;
 $colDefault: #000000;
 $colHighlight: #ffffff;
 $dropDown: true;
 .navbar {
+  -webkit-transition: $bgDefault 0.5s ease-in-out;
+  -moz-transition:  $bgDefault 0.5s ease-in-out;
+  -ms-transition:  $bgDefault 0.5s ease-in-out;
+  -o-transition:  $bgDefault 0.5s ease-in-out;
+  transition:  $bgDefault 0.5s ease-in-out;
+}
+.navbar {
   background-color: $bgDefault;
   .navbar-brand {
     color: $colDefault;
-    height: 100px;
     text-align: center;
     &:hover,
     &:focus {
       color: $colHighlight;
-      // background-color: $bgHighlight;
       background-image: linear-gradient($bgHighlight, black);
       border-radius: 0px 0px 20px 20px;
-      // border-color: $bgHighlight;
-      // border-top-width: 15px;
     }
   }
   .navbar-text {

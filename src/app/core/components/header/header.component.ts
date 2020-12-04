@@ -3,9 +3,6 @@ import { Router } from '@angular/router';
 
 import { TranslateService } from '@ngx-translate/core';
 
-// import { AccountService } from '../services';
-import { Account, Role } from '../../../core/models';
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -14,26 +11,21 @@ import { Account, Role } from '../../../core/models';
 export class HeaderComponent implements OnInit {
   @Input() backLink: string[];
 
-  Role = Role;
-
   title: string;
   isMenuCollapsed: boolean;
 
   constructor(
     private routerLink: Router,
     public translate: TranslateService,
-     // public account: Account
   ) {
-    // this.account = account;
     this.title = 'Ivensa';
     this.isMenuCollapsed = true;
     this.backLink = [''];
-    translate.addLangs(['en', 'da', 'ge', 'se']);
+    translate.addLangs(['da', 'en', 'ge', 'se']);
     translate.setDefaultLang('en');
 
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang.match(/en|da/) ? browserLang : 'en');
-    // this.accountService.account.subscribe((x) => (this.account = x));
   }
 
   onBack(): void {
@@ -44,11 +36,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  logout(): void {
-    // this.accountService.logout();
-  }
-
-  onOptionsSelected(value: string) {
+  onOptionsSelected(value: string): void {
     console.log('the selected value is ' + value);
   }
 }

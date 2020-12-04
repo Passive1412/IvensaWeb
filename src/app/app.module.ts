@@ -34,7 +34,7 @@ import {
 // Page Modules
 import { HomeComponent, NotFoundComponent } from './pages/english/';
 import { HeaderComponent } from './core/components';
-// import { NavigationComponent } from './pages/danish/navigation/navigation.component';
+import { BannerComponent } from './core/components/banner/banner.component';
 // import { BannerComponent } from './pages/danish/banner/banner.component';
 
 // AoT requires an exported function for factories
@@ -49,6 +49,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     NotFoundComponent,
     HeaderComponent,
     HeaderComponent,
+    BannerComponent,
     //NavigationComponent,
     //BannerComponent,
   ],
