@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.module {
+  display: grid;
+  place-items: center;
+  color: #ff43ea;
+  position: relative;
+}
+.module::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-image: url("../../../../assets/footer/footer_img.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  filter: grayscale(100%);
+}
+.module-inside {
+  position: relative;
+  font: bold 42px sans-serif;
+}

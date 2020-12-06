@@ -1,0 +1,116 @@
+.body {
+  // display: grid;
+  align-content: center;
+  justify-content: center;
+  background-image: url("../../../../assets/background/background_image.jpg");
+  //   width: 100%;
+  //   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.module-1 {
+  display: grid;
+  place-items: center;
+  color: black;
+  position: relative;
+}
+.module-1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+}
+.module-1-inside {
+  position: relative;
+  padding: 10%;
+  text-align: center;
+  font: bold 48px sans-serif;
+}
+
+.module-2 {
+  display: grid;
+  place-items: center;
+  color: white;
+  position: relative;
+}
+.module-2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fc980d;
+}
+.module-2-inside {
+  position: relative;
+  padding: 1%;
+  text-align: center;
+  font: bold 38px sans-serif;
+}
+
+.module-3 {
+  display: grid;
+  place-items: center;
+  color: white;
+  position: relative;
+}
+.module-3::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  // background-image: url("../../../../assets/footer/footer_img.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  // filter: opacity(100%);
+}
+.module-3-inside {
+  position: relative;
+  padding: 10%;
+  text-align: center;
+  font: bold 38px sans-serif;
+}
+
+.module-4 {
+  display: grid;
+  place-items: center;
+  color: black;
+  position: relative;
+}
+.module-4::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+}
+.module-4-inside {
+  position: relative;
+  padding: 1%;
+  text-align: center;
+  font: bold 38px sans-serif;
+}
+
+.module-5 {
+  display: grid;
+  place-items: center;
+  color: black;
+  position: relative;
+}
+.module-5::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #fed295;
+}
+.module-5-inside {
+  position: relative;
+  font: 20px sans-serif;
+}

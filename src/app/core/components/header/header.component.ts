@@ -14,10 +14,7 @@ export class HeaderComponent implements OnInit {
   title: string;
   isMenuCollapsed: boolean;
 
-  constructor(
-    private routerLink: Router,
-    public translate: TranslateService,
-  ) {
+  constructor(private routerLink: Router, public translate: TranslateService) {
     this.title = 'Ivensa';
     this.isMenuCollapsed = true;
     this.backLink = [''];

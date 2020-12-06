@@ -35,6 +35,7 @@ import {
 import { HomeComponent, NotFoundComponent } from './pages/english/';
 import { HeaderComponent } from './core/components';
 import { BannerComponent } from './core/components/banner/banner.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 // import { BannerComponent } from './pages/danish/banner/banner.component';
 
 // AoT requires an exported function for factories
@@ -50,6 +51,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HeaderComponent,
     HeaderComponent,
     BannerComponent,
+    FooterComponent,
     //NavigationComponent,
     //BannerComponent,
   ],
