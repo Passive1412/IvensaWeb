@@ -8,53 +8,95 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/css/font-awesome.min.css";
 
-$black: #000000;
-$gray: #3f5b58;
-$red: #c8102e;
-$dark-red: #8d1b3d;
-$orange: #f5821e;
-$purple: #93358c;
-$green: #597e50;
-$blue: #002855;
-$light-blue: #489ed8;
-
-$theme-colors: (
-  primary: $gray,
-  secondary: $blue,
-  success: $green,
-  info: $light-blue,
-  warning: $orange,
-  danger: $red,
-);
-
-$font-family-base: Verdana, Geneva, sans-serif;
-$font-size-base: 0.8rem;
-$font-size-lg: 1rem;
-$font-size-sm: 0.75rem;
-
-$enable-caret: true !default;
-$enable-rounded: true !default;
-$enable-shadows: false !default;
-$enable-gradients: false !default;
-$enable-transitions: true !default;
-$enable-grid-classes: true !default;
-$enable-print-styles: true !default;
-$enable-validation-icons: true !default;
-$enable-responsive-font-sizes: true !default;
-$enable-prefers-reduced-motion-media-query: true !default;
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 600px,
-  md: 800px,
-  lg: 1000px,
-  xl: 1200px,
-) !default;
-
-.navbar-dark {
-  background-color: $black;
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
 
-.is-invalid {
-  border: solid 1px $red;
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
 }
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+// $black: #000000;
+// $gray: #3f5b58;
+// $red: #c8102e;
+// $dark-red: #8d1b3d;
+// $orange: #f5821e;
+// $purple: #93358c;
+// $green: #597e50;
+// $blue: #002855;
+// $light-blue: #489ed8;
+
+// $theme-colors: (
+//   primary: $gray,
+//   secondary: $blue,
+//   success: $green,
+//   info: $light-blue,
+//   warning: $orange,
+//   danger: $red,
+// );
+
+// $font-family-base: Verdana, Geneva, sans-serif;
+// $font-size-base: 0.8rem;
+// $font-size-lg: 1rem;
+// $font-size-sm: 0.75rem;
+
+// $enable-caret: true !default;
+// $enable-rounded: true !default;
+// $enable-shadows: false !default;
+// $enable-gradients: false !default;
+// $enable-transitions: true !default;
+// $enable-grid-classes: true !default;
+// $enable-print-styles: true !default;
+// $enable-validation-icons: true !default;
+// $enable-responsive-font-sizes: true !default;
+// $enable-prefers-reduced-motion-media-query: true !default;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 600px,
+//   md: 800px,
+//   lg: 1000px,
+//   xl: 1200px,
+// ) !default;
+
+// .navbar-dark {
+//   background-color: transparent;
+// }
+
+// .is-invalid {
+//   border: solid 1px $red;
+// }

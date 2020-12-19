@@ -7,10 +7,12 @@ import {
   HttpClient,
 } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MDBBootstrapModule  } from 'angular-bootstrap-md';
 
 //
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
 
 // AgGrid Modules
 import { AgGridModule } from '@ag-grid-community/angular';
@@ -32,10 +34,13 @@ import {
 // Core Modules
 
 // Page Modules
-import { HomeComponent, NotFoundComponent } from './pages/english/';
+import { HomeComponent, NotFoundComponent } from './features/pages/english/';
 import { HeaderComponent } from './core/components';
 import { BannerComponent } from './core/components/banner/banner.component';
 import { FooterComponent } from './core/components/footer/footer.component';
+import { TimelineComponent } from './features/components/timeline/timeline.component';
+import { ProcessComponent } from './features/components/process/process.component';
+import { OurComponent } from './features/components/our/our.component';
 // import { BannerComponent } from './pages/danish/banner/banner.component';
 
 // AoT requires an exported function for factories
@@ -52,6 +57,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HeaderComponent,
     BannerComponent,
     FooterComponent,
+    TimelineComponent,
+    ProcessComponent,
+    OurComponent,
     //NavigationComponent,
     //BannerComponent,
   ],
@@ -62,6 +70,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HttpClientModule,
     BrowserAnimationsModule,
     NgbModule,
+    NgVerticalTimelineModule,
+    MDBBootstrapModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

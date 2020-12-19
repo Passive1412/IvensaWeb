@@ -1,30 +1,417 @@
 body {
-  height: 100vh;
-  padding: 0;
-  display: grid;
-  align-content: center;
-  justify-content: center;
+  background: #fbfbfd;
+  // height: 100vh;
+  // padding: 0;
+  // display: grid;
+  // align-content: center;
+  // justify-content: center;
 }
-.module {
-  display: grid;
-  place-items: center;
-  color: #ff43ea;
+
+.new_footer_area {
+  background: gray;
+  // display: grid;
+  // place-items: center;
   position: relative;
 }
-.module::before {
+
+.new_footer_area::before {
   content: "";
   width: 100%;
   position: absolute;
-  background-image: url("../../../../assets/footer/footer_img.jpg");
-  /* Full height */
+  background-image: url("../../../../assets/images/footer/footer_bg.png");
   height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: inherit;
-  filter: grayscale(100%);
+  opacity: 90%;
+  filter: blur(25px) saturate(100%) brightness(100%)
+  // filter: brightness(60%) saturate(100%) invert(31%) sepia(34%) saturate(542%) hue-rotate(158deg) brightness(96%) contrast(87%);
 }
-.module-inside {
+.new_footer_area-inside {
   position: relative;
-  font: bold 42px sans-serif;
+  font: bold 12px sans-serif;
 }
+.new_footer_top {
+  padding: 5% 0px 5%;
+  position: relative;
+  overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+.footer_bottom {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #7f88a6;
+  padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+  border-width: 1px;
+  margin-top: 20px;
+}
+.btn_get_two:hover {
+  background: transparent;
+  color: #5e2ced;
+}
+.btn_get:hover {
+  color: #fff;
+  background: #6754e2;
+  border-color: #6754e2;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a:hover,
+a:focus,
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+  color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+  margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+  margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+  margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+  margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+  width: 44px;
+  height: 44px;
+  line-height: 43px;
+  background: transparent;
+  border: 1px solid #e2e2eb;
+  font-size: 24px;
+}
+.f_social_icon a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 45px;
+  color: #858da8;
+  display: inline-block;
+  background: #ebeef5;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.ti-facebook:before {
+  content: "\e741";
+}
+.ti-twitter-alt:before {
+  content: "\e74b";
+}
+.ti-vimeo-alt:before {
+  content: "\e74a";
+}
+.ti-pinterest:before {
+  content: "\e731";
+}
+
+.btn_get_two {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #5e2ced;
+  border-color: #5e2ced;
+  color: #fff;
+}
+
+.btn_get_two:hover {
+  background: transparent;
+  color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a:hover {
+  background: #5e2ced;
+  border-color: #5e2ced;
+  color: white;
+}
+.new_footer_top .f_social_icon a + a {
+  margin-left: 4px;
+}
+.new_footer_top .f-title {
+  margin-bottom: 30px;
+  color: #fc980d;
+}
+.f_brand {
+  align-items: left;
+}
+.f_600 {
+  font-weight: 600;
+}
+.f_size_18 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3b5c6f;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+  color: white;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: guyAni 15s linear infinite;
+  animation: guyAni 15s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_one_square {
+  background: url("../../../../assets/images/footer/red_square.png") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: squareAni 15s linear infinite;
+  animation: squareAni 15s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
+    center;
+  object-fit: cover;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: guyAni 13s linear infinite;
+  animation: guyAni 13s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two_square {
+  background: url("../../../../assets/images/footer/yellow_square.png") no-repeat
+    center center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: squareAni 13s linear infinite;
+  animation: squareAni 13s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_three {
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: guyAni 17s linear infinite;
+  animation: guyAni 17s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_three_square {
+  background: url("../../../../assets/images/footer/green_square.png") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: squareAni 17s linear infinite;
+  animation: squareAni 17s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_four {
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: guyAni 19s linear infinite;
+  animation: guyAni 19s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_four_square {
+  background: url("../../../../assets/images/footer/blue_square.png") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: squareAni 19s linear infinite;
+  animation: squareAni 19s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_five {
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: guyAni 11s linear infinite;
+  animation: guyAni 11s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_five_square {
+  background: url("../../../../assets/images/footer/pink_square.png") no-repeat center
+    center;
+  height: 600px;
+  width: 308px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  scale: 15%;
+  transform-origin: 50% bottom;
+  -webkit-animation: squareAni 11s linear infinite;
+  animation: squareAni 11s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_camera {
+  background: url("https://spaceit.ca/assets/gifs/surveillance.gif") no-repeat
+    center center;
+  width: 88px;
+  height: 100%;
+  background-size: 100%;
+  bottom: 0;
+  left: 95%;
+  position: absolute;
+}
+
+@-moz-keyframes guyAni {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes guyAni {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes guyAni {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes squareAni {
+  0% {
+    background: transparent;
+    left: -25%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes squareAni {
+  0% {
+    background: transparent;
+    left: -25%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes squareAni {
+  0% {
+    background: transparent;
+    left: -25%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+hr {
+  display: block;
+  margin-end: auto;
+  margin-start: auto;
+  border: 1px inset;
+  overflow: hidden;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+}
+
+/*************footer End*****************/

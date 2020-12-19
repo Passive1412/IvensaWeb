@@ -1,40 +1,60 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-dark">
-  <span class="navbar-brand">{{ title }}</span>
-  <button
-    (click)="isMenuCollapsed = !isMenuCollapsed"
-    aria-expanded="false"
-    class="navbar-toggler"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-    <ul class="nav navbar-nav ml-auto" ngbNav routerLinkActive="active">
-      <li class="nav-item" ngbNavItem>
-        <a
-          (click)="isMenuCollapsed = true"
-          [routerLink]="'/first'"
-          class="nav-link"
-          ngbNavLink
-        >
-          First
-        </a>
-      </li>
-      <li class="nav-item" ngbNavItem>
-        <a
-          (click)="isMenuCollapsed = true"
-          [routerLink]="'/second'"
-          class="nav-link"
-          ngbNavLink
-        >
-          Second
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav> -->
+<!--Main Navigation-->
+<header class="intro-header">
 
-<nav
-  class="navbar sticky-top navbar-expand-lg navbar-dark"
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>MDB</strong></a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+      </ul>
+      <form class="form-inline waves-light" mdbWavesEffect>
+        <div class="md-form mt-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
+    </links>
+  </nav>
+
+  <!-- Intro Section -->
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-4 white-text text-center">
+            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Minimalist intro</strong></h1>
+            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Photography & design</strong></h5>
+            <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">portfolio</a>
+            <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About me</a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+
+</header>
+<!--Main Navigation-->
+<!-- <nav
+  SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"
 >
   <div class="container">
     <a
@@ -134,4 +154,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
