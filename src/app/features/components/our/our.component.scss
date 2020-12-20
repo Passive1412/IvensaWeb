@@ -1,0 +1,32 @@
+$primary: #fc980d;
+$secondary: #0f2147;
+
+section {
+    padding: 100px 0;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eee;
+  }
+  
+  h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: $secondary;
+  }

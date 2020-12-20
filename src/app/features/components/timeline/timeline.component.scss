@@ -60,6 +60,11 @@ h1 {
 				left: 0;
 			}
 
+			.date2 {
+				right: auto;
+				left: 0;
+			}
+
 			&::after {
 				content: '';
 				position: absolute;
@@ -103,15 +108,23 @@ h1 {
 	}
 }
 
+
 .timeline-img {
-	width: 30px;
-	height: 30px;
+    background-color:red;
+    line-height:40px;
+    text-align:center;
+    vertical-align:middle;
+	display:inline-block;
+	
+	width: 40px;
+	height: 40px;
 	background: $primary;
 	border-radius: 50%;
 	position: absolute;
 	left: 50%;
 	margin-top: 25px;
-	margin-left: -15px;
+	margin-left: -20px;
+
 }
 
 a {
@@ -163,7 +176,11 @@ a {
 
       .img-4 {
 
-      }
+	  }
+	  
+	  .img-5 {
+
+	}
 		}
 }
 
@@ -182,22 +199,27 @@ a {
 }
 
 .img-1 {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/ivensa.jpg') center center no-repeat;
+	background-size: cover;
+  }
+
+.img-2 {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/IoT_Week.png') center center no-repeat;
   background-size: cover;
   
 }
 
-.img-2 {
+.img-3 {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/directions_emea_2019.png') center center no-repeat;
   background-size: cover;
 }
 
-.img-3 {
+.img-4 {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/OpenSource_wide.png') center center no-repeat;
   background-size: cover;
 }
 
-.img-4 {
+.img-5 {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/Screenshot_2020-12-19\ RetailTech\ Lab\ –\ Ivensa.jpg') center center no-repeat;
   background-size: cover;
 }
@@ -217,7 +239,20 @@ blockquote {
 	position: absolute;
 	top: 0;
 	right: 0;
+	border-radius: 10px 0px 10px 10px;
 }
+
+.date2 {
+	background: $accent;
+	display: inline-block;
+	color: $accent2;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0px 10px 10px 10px;
+}
+
 
 .bnt-more {
   background: $accent2;
