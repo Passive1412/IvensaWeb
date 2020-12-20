@@ -3,8 +3,6 @@ $secondary: #0f2147;
 
 mat-toolbar {
   justify-content: space-between;
-  display: flex;
-  justify-content: center;
 }
 
 .content {
@@ -20,11 +18,10 @@ mat-toolbar {
 }
 
 .mat-card-content {
-  font-size: 50%;
+  font-size: 100%;
   // letter-spacing: 3px;
   font-weight: 400;
   color: $secondary; 
-  text-align: left;
 }
 
 hr {
@@ -34,25 +31,19 @@ hr {
 }
 
 .mat-card-title {
+  color: $secondary;
   display: flex;
   justify-content: center;
-  color: $secondary;
-}
-
-
-.icon {
-  display: flex;
-  justify-content: center; 
-  font-size: 500%;
-}
-
-.test {
-  display: flex;
-  justify-content: center; 
-  font-size: 100%;
+  align-items: center;
 }
 
 .mat-card-header {
   display: flex;
   justify-content: center; 
+}
+
+.mat-card-image {
+  // height: 100%;
+  // width: 100%;
+  max-height: 300px;
 }
