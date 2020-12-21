@@ -3,14 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-process',
   templateUrl: './process.component.html',
-  styleUrls: ['./process.component.scss']
+  styleUrls: ['./process.component.scss'],
 })
 export class ProcessComponent implements OnInit {
   gridColumns = 3;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

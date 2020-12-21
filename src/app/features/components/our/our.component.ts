@@ -3,16 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-our',
   templateUrl: './our.component.html',
-  styleUrls: ['./our.component.scss']
+  styleUrls: ['./our.component.scss'],
 })
 export class OurComponent implements OnInit {
-  title = "test"
+  title = 'test';
 
   gridColumns = 3;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

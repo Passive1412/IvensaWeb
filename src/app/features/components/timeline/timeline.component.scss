@@ -1,7 +1,7 @@
 $primary: #fc980d;
 $dark-primary: #0f2147;
 $light-primary: #0f2147;
-$text: #FFFFFF;
+$text: #ffffff;
 $linktext: #0f2147;
 $primary-text: #212121;
 $secondary-text: #757575;
@@ -12,12 +12,13 @@ section {
   padding: 100px 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 400;
   background-color: #eee;
@@ -31,100 +32,95 @@ h1 {
 }
 
 .timeline {
+  position: relative;
 
-	position: relative;
-
-	&::before {
-		content: '';
-		background: $light-primary;
-		width: 5px;
-		height: 95%;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+  &::before {
+    content: "";
+    background: $light-primary;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .timeline-item {
-	width: 100%;
-	margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 
-	&:nth-child(even) {
+  &:nth-child(even) {
+    .timeline-content {
+      float: right;
+      padding: 40px 30px 10px 30px;
 
-		.timeline-content {
-			float: right;
-			padding: 40px 30px 10px 30px;
+      .date {
+        right: auto;
+        left: 0;
+      }
 
-			.date {
-				right: auto;
-				left: 0;
-			}
+      .date2 {
+        right: auto;
+        left: 0;
+      }
 
-			.date2 {
-				right: auto;
-				left: 0;
-			}
+      &::after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #f5f5f5 transparent transparent;
+      }
+    }
+  }
 
-			&::after {
-				content: '';
-				position: absolute;
-				border-style: solid;
-				width: 0;
-				height: 0;
-				top: 30px;
-				left: -15px;
-				border-width: 10px 15px 10px 0;
-				border-color: transparent #f5f5f5 transparent transparent;
-			}
-		}
-	}
-
-	&::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
-
 
 .timeline-content {
-	position: relative;
-	width: 45%;
-	padding: 10px 30px;
-	border-radius: 4px;
-	background: #f5f5f5;
-	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
 
-	&::after {
-		content: '';
-		position: absolute;
-		border-style: solid;
-		width: 0;
-		height: 0;
-		top: 30px;
-		right: -15px;
-		border-width: 10px 0 10px 15px;
-		border-color: transparent transparent transparent #f5f5f5;
-	}
+  &::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5;
+  }
 }
 
-
 .timeline-img {
-    background-color:red;
-    line-height:40px;
-    text-align:center;
-    vertical-align:middle;
-	display:inline-block;
-	
-	width: 40px;
-	height: 40px;
-	background: $primary;
-	border-radius: 50%;
-	position: absolute;
-	left: 50%;
-	margin-top: 25px;
-	margin-left: -20px;
+  background-color: red;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
 
+  width: 40px;
+  height: 40px;
+  background: $primary;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -20px;
 }
 
 a {
@@ -138,9 +134,11 @@ a {
     margin-top: 0px;
     display: inline-block;
     border-radius: 2px;
-    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
-  
-    &:hover, &:active, &:focus {
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+
+    &:hover,
+    &:active,
+    &:focus {
       background: darken($primary, 10%);
       color: $text;
       text-decoration: none;
@@ -149,110 +147,111 @@ a {
 }
 
 .timeline-card {
-	padding: 0!important;
+  padding: 0 !important;
 
-	p {
-		padding: 0 20px;
-	}
+  p {
+    padding: 0 20px;
+  }
 
-	.bnt-more {
-      margin-left: 20px;
-	}
+  .bnt-more {
+    margin-left: 20px;
+  }
 }
 
 .timeline-item {
-    .timeline-img-header {
-      .img-1 {
+  .timeline-img-header {
+    .img-1 {
+    }
 
-      }
+    .img-2 {
+    }
 
-      .img-2 {
+    .img-3 {
+    }
 
-      }
-      
-      .img-3 {
+    .img-4 {
+    }
 
-      }
-
-      .img-4 {
-
-	  }
-	  
-	  .img-5 {
-
-	}
-		}
+    .img-5 {
+    }
+  }
 }
 
 .timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
 
-	height: 200px;
-	position: relative;
-	margin-bottom: 20px;
-
-	h2 {
-		color: $text;
-		position: absolute;
-		bottom: 5px;
-		left: 20px;
-	}
+  h2 {
+    color: $text;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+  }
 }
 
 .img-1 {
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/ivensa.jpg') center center no-repeat;
-	background-size: cover;
-  }
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url("../../../../assets/images/timeline/ivensa.jpg") center center no-repeat;
+  background-size: cover;
+}
 
 .img-2 {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/IoT_Week.png') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url("../../../../assets/images/timeline/IoT_Week.png") center center
+      no-repeat;
   background-size: cover;
-  
 }
 
 .img-3 {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/directions_emea_2019.png') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url("../../../../assets/images/timeline/directions_emea_2019.png") center
+      center no-repeat;
   background-size: cover;
 }
 
 .img-4 {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/OpenSource_wide.png') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url("../../../../assets/images/timeline/OpenSource_wide.png") center center
+      no-repeat;
   background-size: cover;
 }
 
 .img-5 {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('../../../../assets/images/timeline/Screenshot_2020-12-19\ RetailTech\ Lab\ –\ Ivensa.jpg') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url("../../../../assets/images/timeline/Screenshot_2020-12-19\ RetailTech\ Lab\ –\ Ivensa.jpg")
+      center center no-repeat;
   background-size: cover;
 }
 
 blockquote {
-	margin-top: 30px;
-	color: $secondary-text;
-	border-left-color: $primary;
-	padding: 0 20px;
+  margin-top: 30px;
+  color: $secondary-text;
+  border-left-color: $primary;
+  padding: 0 20px;
 }
 
 .date {
-	background: $accent;
-	display: inline-block;
-	color: $accent2;
-	padding: 10px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-radius: 10px 0px 10px 10px;
+  background: $accent;
+  display: inline-block;
+  color: $accent2;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px 0px 10px 10px;
 }
 
 .date2 {
-	background: $accent;
-	display: inline-block;
-	color: $accent2;
-	padding: 10px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-radius: 0px 10px 10px 10px;
+  background: $accent;
+  display: inline-block;
+  color: $accent2;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 10px 10px 10px;
 }
-
 
 .bnt-more {
   background: $accent2;
@@ -264,9 +263,11 @@ blockquote {
   margin-top: 10px;
   display: inline-block;
   border-radius: 2px;
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     background: darken($primary, 10%);
     color: $text;
     text-decoration: none;
@@ -274,52 +275,43 @@ blockquote {
 }
 
 @media screen and (max-width: 768px) {
+  .timeline {
+    &::before {
+      left: 50px;
+    }
 
-	.timeline {
+    .timeline-img {
+      left: 50px;
+    }
 
-		&::before {
-			left: 50px;
-		}
+    .timeline-content {
+      max-width: 100%;
+      width: auto;
+      margin-left: 70px;
+    }
 
-		.timeline-img {
-			left: 50px;
-		}
+    .timeline-item {
+      &:nth-child(even) {
+        .timeline-content {
+          float: none;
+        }
+      }
 
-		.timeline-content {
-			max-width: 100%;
-			width: auto;
-			margin-left: 70px;
-		}
-
-		.timeline-item {
-
-			&:nth-child(even) {
-
-				.timeline-content {
-					float: none;
-
-				}
-			}
-
-			&:nth-child(odd) {
-
-				.timeline-content {
-					
-					&::after {
-						content: '';
-						position: absolute;
-						border-style: solid;
-						width: 0;
-						height: 0;
-						top: 30px;
-						left: -15px;
-						border-width: 10px 15px 10px 0;
-						border-color: transparent #f5f5f5 transparent transparent;
-					}
-				}
-
-			}
-		}
-	}
-	
+      &:nth-child(odd) {
+        .timeline-content {
+          &::after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent #f5f5f5 transparent transparent;
+          }
+        }
+      }
+    }
+  }
 }

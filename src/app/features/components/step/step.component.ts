@@ -3,16 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-step',
   templateUrl: './step.component.html',
-  styleUrls: ['./step.component.scss']
+  styleUrls: ['./step.component.scss'],
 })
 export class StepComponent implements OnInit {
-  title = "test"
+  title = 'test';
 
   gridColumns = 3;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -20,7 +20,7 @@ $secondary: #0f2147;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  filter: blur(15px) saturate(100%) brightness(100%)
+  filter: blur(15px) saturate(100%) brightness(100%);
 }
 .background-inside {
   position: relative;
@@ -54,7 +54,7 @@ $secondary: #0f2147;
 .module-infront-left {
   display: grid;
   place-items: start;
-  position: relative
+  position: relative;
 }
 .module-infront-left::before {
   content: "";
@@ -73,11 +73,10 @@ $secondary: #0f2147;
   font: bold 38px sans-serif;
 }
 
-
 .module-infront-right {
   display: grid;
   place-items: end;
-  position: relative
+  position: relative;
 }
 .module-infront-right::before {
   content: "";
@@ -95,8 +94,6 @@ $secondary: #0f2147;
   text-align: center;
   font: bold 38px sans-serif;
 }
-
-
 
 .module-4 {
   display: grid;
