@@ -9,7 +9,7 @@ export class StepComponent implements OnInit {
   title = "test"
 
   gridColumns = 3;
-  
+
   constructor() { }
 
   ngOnInit(): void {

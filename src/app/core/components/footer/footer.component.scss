@@ -1,30 +1,41 @@
 $primary: #fc980d;
 $dark-primary: #0f2147;
 
-
 .new_footer_area {
   background: gray;
   position: relative;
+  width: 100vw; height: 100%;
 }
 
 .new_footer_area::before {
   content: "";
-  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+
+  width: 100vw; height: 100%;
   position: absolute;
   background-image: url("../../../../assets/images/footer/footer_bg.png");
-  height: 100%;
+  min-width: 100vw;
   /* Center and scale the image nicely */
   background-position: center;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-size: inherit;
   opacity: 90%;
-  filter: blur(25px) saturate(100%) brightness(100%)
+  filter: blur(25px) saturate(100%) brightness(100%);
   // filter: brightness(60%) saturate(100%) invert(31%) sepia(34%) saturate(542%) hue-rotate(158deg) brightness(96%) contrast(87%);
 }
 .new_footer_area-inside {
   position: relative;
   font: bold 12px sans-serif;
 }
+
 .new_footer_top {
   padding: 5% 0px 5%;
   position: relative;
@@ -170,8 +181,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_one {
-  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -185,8 +196,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_one_square {
-  background: url("../../../../assets/images/footer/red_square.png") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/red_square.png") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -200,8 +211,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
-  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat
+    center center;
   object-fit: cover;
   height: 600px;
   width: 308px;
@@ -216,8 +227,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_two_square {
-  background: url("../../../../assets/images/footer/yellow_square.png") no-repeat
-    center center;
+  background: url("../../../../assets/images/footer/yellow_square.png")
+    no-repeat center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -231,8 +242,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_three {
-  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -246,8 +257,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_three_square {
-  background: url("../../../../assets/images/footer/green_square.png") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/green_square.png") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -261,8 +272,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_four {
-  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -276,8 +287,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_four_square {
-  background: url("../../../../assets/images/footer/blue_square.png") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/blue_square.png") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -291,8 +302,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_five {
-  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/standardGuy.gif") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;
@@ -306,8 +317,8 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_five_square {
-  background: url("../../../../assets/images/footer/pink_square.png") no-repeat center
-    center;
+  background: url("../../../../assets/images/footer/pink_square.png") no-repeat
+    center center;
   height: 600px;
   width: 308px;
   background-size: 100%;

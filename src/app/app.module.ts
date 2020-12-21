@@ -51,6 +51,9 @@ import { StepComponent } from './features/components/step/step.component';
 import { HowComponent } from './features/components/how/how.component';
 import { ComeComponent } from './features/components/come/come.component';
 import { IntroComponent } from './features/components/intro/intro.component';
+import { AboutComponent } from './features/components/about/about.component';
+import { OfferComponent } from './features/components/offer/offer.component';
+import { CasesComponent } from './features/components/cases/cases.component';
 // import { BannerComponent } from './pages/danish/banner/banner.component';
 
 // AoT requires an exported function for factories
@@ -74,6 +77,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HowComponent,
     ComeComponent,
     IntroComponent,
+    AboutComponent,
+    OfferComponent,
+    CasesComponent,
     //NavigationComponent,
     //BannerComponent,
   ],

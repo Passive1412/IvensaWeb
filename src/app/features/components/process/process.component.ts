@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./process.component.scss']
 })
 export class ProcessComponent implements OnInit {
+  gridColumns = 3;
 
   constructor() { }
 

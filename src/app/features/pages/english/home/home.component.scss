@@ -29,68 +29,74 @@ $secondary: #0f2147;
   // font: bold 48px sans-serif;
 }
 
-.module-1 {
+.module-infront {
   display: grid;
   place-items: center;
   color: black;
   position: relative;
 }
-.module-1::before {
+.module-infront::before {
   content: "";
-  width: 100%;
   height: 100%;
-  position: absolute;
-  background-color: white;
-}
-.module-1-inside {
-  position: relative;
-  padding: 10%;
-  text-align: center;
-  font: bold 48px sans-serif;
-}
-
-.module-2 {
-  display: grid;
-  place-items: center;
-  color: white;
-  position: relative;
-}
-.module-2::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #fc980d;
-}
-.module-2-inside {
-  position: relative;
-  padding: 1%;
-  text-align: center;
-  font: bold 38px sans-serif;
-}
-
-.module-3 {
-  display: grid;
-  place-items: center;
-  color: white;
-  position: relative;
-}
-.module-3::before {
-  content: "";
   width: 100%;
   position: absolute;
-  height: 100%;
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: inherit;
 }
-.module-3-inside {
+.module-infront-inside {
   position: relative;
-  padding-top: 5%;
+  padding: 10%;
+  text-align: center;
+  font: 20px sans-serif;
+}
+
+.module-infront-left {
+  display: grid;
+  place-items: start;
+  position: relative
+}
+.module-infront-left::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+.module-infront-left-inside {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  position: relative;
   text-align: center;
   font: bold 38px sans-serif;
 }
+
+
+.module-infront-right {
+  display: grid;
+  place-items: end;
+  position: relative
+}
+.module-infront-right::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+.module-infront-right-inside {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  position: relative;
+  text-align: center;
+  font: bold 38px sans-serif;
+}
+
+
 
 .module-4 {
   display: grid;
