@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss'],
 })
 export class BannerComponent implements OnInit {
-  gridColumns = 4;
+  gridColumns = 3;
 
   constructor() {}
 
   ngOnInit(): void {}
 }
-
