@@ -1,0 +1,60 @@
+$primary: #fc980d;
+$secondary: #0f2147;
+
+// mat-toolbar {
+//   justify-content: space-between;
+//   display: flex;
+//   justify-content: center;
+// }
+
+.content {
+  position: relative;
+  justify-content: space-between;
+  bottom: 15vw;
+  margin-bottom: -15vw;
+}
+
+// .content > mat-card {
+//   margin-bottom: 16px;
+// }
+
+// .mat-card {
+//   background-color: $primary;
+// }
+
+// .mat-card-content {
+//   font-size: 50%;
+//   // letter-spacing: 3px;
+//   font-weight: 400;
+//   color: $secondary;
+//   text-align: left;
+// }
+
+// hr {
+//   display: block;
+//   border: 1px inset;
+//   overflow: hidden;
+// }
+
+// .mat-card-title {
+//   display: flex;
+//   justify-content: center;
+//   color: $secondary;
+// }
+
+// .icon {
+//   display: flex;
+//   justify-content: center;
+//   font-size: 500%;
+// }
+
+// .test {
+//   display: flex;
+//   justify-content: center;
+//   font-size: 100%;
+// }
+
+// .mat-card-header {
+//   display: flex;
+//   justify-content: center;
+// }

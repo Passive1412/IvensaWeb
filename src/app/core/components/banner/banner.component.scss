@@ -1,7 +1,8 @@
 $primary: #fc980d;
 
 .view {
-  height: 75vh !important;
+  height: 100vh !important;
+  background-color: black;
 }
 
 .hr-light {
@@ -25,7 +26,7 @@ $primary: #fc980d;
   -o-background-size: cover;
   background-size: cover;
 
-  height: 100vh;
+  height: 75vh;
   background-size: cover;
   background-position: center center;
   background-image: url("../../../../assets/images/banners/banner1.jpeg");
@@ -38,7 +39,7 @@ $primary: #fc980d;
   -o-background-size: cover;
   background-size: cover;
 
-  height: 100vh;
+  height: 75vh;
   background-size: cover;
   background-position: center center;
   background-image: url("../../../../assets/images/banners/banner2.jpeg");
@@ -51,15 +52,21 @@ $primary: #fc980d;
   -o-background-size: cover;
   background-size: cover;
 
-  height: 100vh;
+  height: 75vh;
   background-size: cover;
   background-position: center center;
   background-image: url("../../../../assets/images/banners/banner3.png");
 }
 
 .row {
-  margin-left: 10%;
-  margin-right: 40%;
+  max-height: inherit;
+  max-width: inherit;
+  margin-left: 10vw;
+  margin-right: 40vw;
+  margin-top: 25vh;
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 200px 2000px 2000px 200px;
 }
 
 .carousel-item h1 {
@@ -104,6 +111,7 @@ $primary: #fc980d;
 .carousel-item h3 {
   font: bold 20px sans-serif;
   display: inline-block;
+
   position: sticky;
   margin: 0;
   padding: 2%;
@@ -128,4 +136,119 @@ $primary: #fc980d;
   top: 0;
 
   height: 300px;
+}
+
+.carousel-indicators {
+  right: 0;
+  top: 0;
+  height:75vh;
+  width: 5vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  bottom: auto;
+  left: auto;
+  z-index: 99;
+  // justify-content: center;
+  // align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+.carousel-indicators li {
+  width : 2.5px!important;
+  background-color: white;
+  height: 10vh !important;
+  border-radius: 50% !important;
+  // list-style: inherit;
+  margin-left: 1vh;
+  max-height: 75vh;
+  // margin: auto;
+  padding: auto;
+  // margin-top: 5vh;
+  // line-height: 100%;
+}
+
+.carousel-indicators .active {
+  width : 5px!important;
+  background-color: $primary;
+  height: 10vh !important;
+  border-radius: 50% !important
+}
+.carousel-control-next {
+  display: inline-block;
+  right: 5vw;
+  bottom: 0;
+  height: 37.5vh;
+  width: 20vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: auto;
+  left: auto;
+  z-index: 99;
+}
+.carousel-control-prev {
+  display: inline-block;
+  right: 5vw;
+  bottom: auto;
+  height: 37.5vh;
+  width: 20vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: auto;
+  z-index: 99;
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(90deg);
+  // margin-top: auto;
+  margin-top: 75%;
+}
+
+.carousel-control-next-icon {
+  transform: rotate(90deg);
+  // margin: auto;
+  margin-top: 25%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: $primary;
+  text-shadow: 1px 1px 2px black,
+               -1px -1px 2px black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: $primary;
+  text-shadow: 1px 1px 2px black,
+  -1px -1px 2px black;
 }

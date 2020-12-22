@@ -8,5 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CasesComponent implements OnInit {
   constructor() {}
 
+  gridColumns = 4;
+
   ngOnInit(): void {}
 }

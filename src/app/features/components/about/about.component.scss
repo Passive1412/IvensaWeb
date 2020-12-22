@@ -1,5 +1,7 @@
 $primary: #fc980d;
 $secondary: #0f2147;
+$text: #ffffff;
+$text2:	#000000;
 
 hr {
   display: block;
@@ -63,7 +65,7 @@ mat-toolbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 18px sans-serif;
+  font: 16px sans-serif;
 }
 
 .mat-card-title {
@@ -71,7 +73,7 @@ mat-toolbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: bold 48px sans-serif;
+  font: bold 42px sans-serif;
 }
 
 .mat-card-subtitle {
@@ -79,7 +81,7 @@ mat-toolbar {
   display: flex;
   justify-content: left;
   align-items: center;
-  font: bold 32px sans-serif;
+  font: bold 28px sans-serif;
 }
 
 .mat-card-image {
@@ -98,8 +100,8 @@ mat-toolbar {
 }
 
 .md-button {
-  background: linear-gradient(to bottom right, white, $primary);
-  color: $secondary;
+  background: linear-gradient(to bottom right, white, $secondary);
+  color: $text;
   background-color: $primary;
   padding: 2.5%;
   // margin: 6px 8px 6px 8px;
@@ -116,9 +118,24 @@ mat-toolbar {
   -moz-box-shadow: 3px 3px 4px 5px black;
   -webkit-box-shadow: 3px 3px 4px 5px black;
   box-shadow: 3px 3px 4px 5px black;
+
+  text-shadow: 1px 1px 2px black,
+               -1px -1px 2px black;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-shadow: 1px 1px 2px white,
+    -1px -1px 2px white;
+
+    background: linear-gradient(to bottom right, white, $primary);
+    color: $text2;
+    text-decoration: none;
+  }
 }
 
 .left-pin {
+  margin-top: -5vw;
   width: auto;
   max-width: 75vw;
   min-width: 25vw;

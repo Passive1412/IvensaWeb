@@ -19,13 +19,13 @@ body {
 
 body {
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   background-color: #eee;
 }
 
 h1 {
-  font-size: 200%;
+  font-size: 100%;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
@@ -33,7 +33,7 @@ h1 {
 
 .timeline {
   position: relative;
-
+  padding-bottom: 5vh;
   &::before {
     content: "";
     background: $light-primary;
@@ -47,7 +47,7 @@ h1 {
 
 .timeline-item {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: -15%;
 
   &:nth-child(even) {
     .timeline-content {
@@ -123,13 +123,14 @@ h1 {
   margin-left: -20px;
 }
 
+
 a {
   .img-more {
     background: $primary;
     color: $linktext;
     padding: 8px 20px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 0px;
     margin-top: 0px;
     display: inline-block;
@@ -149,8 +150,8 @@ a {
 .timeline-card {
   padding: 0 !important;
 
-  p {
-    padding: 0 20px;
+  .p {
+    padding: 0 10px;
   }
 
   .bnt-more {
