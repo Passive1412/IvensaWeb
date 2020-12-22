@@ -1,25 +1,131 @@
-.carousel-item {
-  height: 500px;
-  width: 100%;
-  min-height: 250px;
+$primary: #fc980d;
+
+.view {
+  height: 75vh !important;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 700px;
+  }
+}
+
+.img-1 {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../../../assets/images/banners/banner1.jpeg");
 }
 
-.carousel-caption h5 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
+.img-2 {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../../../assets/images/banners/banner2.jpeg");
+}
+
+.img-3 {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../../../assets/images/banners/banner3.png");
+}
+
+.row {
+  margin-left: 10%;
+  margin-right: 40%;
+}
+
+.carousel-item h1 {
+  font: bold 32px sans-serif;
+  margin: 0;
   color: white;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10%;
+  text-shadow: 1px 1px 2px black,
+               -1px -1px 2px black;
+
 }
 
-.carousel-caption p {
-  width: 75%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
+.carousel-item h2 {
+  font: bold 14px sans-serif;
+  display: inline-block;
+
+  align-items: flex-end;
+  align-content: flex-start;
+  text-align: left;
+
+  color: white;
+  text-transform: uppercase;
+  padding: 2.5%;
+  border-radius: 10px 10px 10px 10px;
+  background-color:$primary;
+
+  text-shadow: 1px 1px 2px black,
+               -1px -1px 2px black;
+
+  margin-bottom: 10%;
+
+  text-align:left;
+
+  -moz-box-shadow: 3px 3px 4px 5px black;
+  -webkit-box-shadow: 3px 3px 4px 5px black;
+  box-shadow: 3px 3px 4px 5px black;
+}
+
+
+.carousel-item h3 {
+  font: bold 20px sans-serif;
+  display: inline-block;
+  position: sticky;
+  margin: 0;
+  padding: 2%;
+  text-align: left;
+  margin-bottom: 10%;
+  background: rgba(252, 152, 13, 0.50);
+  color: white;
+  border-width: 3px;
+  border-color: black;
+  border-style: outset;
+  text-shadow: 1px 1px 2px black,
+               -1px -1px 2px black;
+}
+.carousel-item h3:hover {
+  background: rgba(252, 152, 13, 0.75);
+}
+
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+
+  height: 300px;
 }
