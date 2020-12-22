@@ -4,6 +4,7 @@ $tertiary: #D37C03;
 
 .view {
   height: 120vh !important;
+  background-color: black;
 }
 
 .hr-light {
@@ -40,15 +41,6 @@ $tertiary: #D37C03;
 
 flex: 1;
 width: 100vw;
-
-  // background: no-repeat center center scroll;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-  // background-size: cover;
-  // background-position: center center;
-  // // background-image: url("../../../../assets/images/banners/banner1.jpeg");
 }
 
 .img-2 {
@@ -71,17 +63,6 @@ width: 100vw;
 
 flex: 1;
 width: 100vw;
-
-  // background: no-repeat center center scroll;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-
-  // height: 75vh;
-  // background-size: cover;
-  // background-position: center center;
-  // background-image: url("../../../../assets/images/banners/banner2.jpeg");
 }
 
 .img-3 {
@@ -103,17 +84,6 @@ width: 100vw;
 
 flex: 1;
 width: 100vw;
-
-  // background: no-repeat center center scroll;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-
-  // height: 75vh;
-  // background-size: cover;
-  // background-position: center center;
-  // background-image: url("../../../../assets/images/banners/banner3.png");
 }
 
 .row-2 {
@@ -319,6 +289,78 @@ width: 100vw;
 }
 
 
-.test {
+.banner-tabs {
   bottom: 5vw;
+}
+
+.mat-card-image {
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  // width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  // height: 35vh;
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  min-height: 25vh;
+  // width: 100%;
+  // height: auto;
+  // opacity: 50%;
+  // filter: invert(52%) sepia(100%) saturate(429%) hue-rotate(354deg) brightness(103%) contrast(98%);
+}
+
+.mat-card-content {
+  min-height: 16vh;
+}
+
+.banner-info {
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+}
+.banner-info h1 {
+  font: bold 32px sans-serif;
+  margin: 0;
+  margin-bottom: 2vh;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px white,
+  -1px -1px 1px white;
+}
+
+.banner-info p {
+  font: bold 14px sans-serif;
+  margin: 0;
+  margin-bottom: 2vh;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  font-size: 500%;
+}
+
+.banner-info h3 {
+  font: bold 20px sans-serif;
+  // display: inline-block;
+  position: sticky;
+  margin: 0;
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 10%;
+  background: rgba(211, 124, 3, 0.50);
+  color: white;
+  border-width: 3px;
+  border-color: $primary;
+  border-style: solid;
+  text-shadow: 1px 1px 2px black,
+               -1px -1px 2px black;
+}
+.banner-info h3:hover {
+  background: rgba(252, 152, 13, 0.75);
 }

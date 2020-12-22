@@ -45,15 +45,9 @@ import { HeaderComponent } from './core/components';
 import { BannerComponent } from './core/components/banner/banner.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { TimelineComponent } from './features/components/timeline/timeline.component';
-import { ProcessComponent } from './features/components/process/process.component';
-import { OurComponent } from './features/components/our/our.component';
-import { StepComponent } from './features/components/step/step.component';
-import { HowComponent } from './features/components/how/how.component';
-import { ComeComponent } from './features/components/come/come.component';
-import { IntroComponent } from './features/components/intro/intro.component';
 import { AboutComponent } from './features/components/about/about.component';
-import { OfferComponent } from './features/components/offer/offer.component';
-import { CasesComponent } from './features/components/cases/cases.component';
+import { NewsComponent } from './features/components/news/news.component';
+import { FeaturesComponent } from './features/components/features/features.component';
 // import { BannerComponent } from './pages/danish/banner/banner.component';
 
 // AoT requires an exported function for factories
@@ -71,15 +65,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BannerComponent,
     FooterComponent,
     TimelineComponent,
-    ProcessComponent,
-    OurComponent,
-    StepComponent,
-    HowComponent,
-    ComeComponent,
-    IntroComponent,
     AboutComponent,
-    OfferComponent,
-    CasesComponent,
+    NewsComponent,
+    FeaturesComponent,
     //NavigationComponent,
     //BannerComponent,
   ],
