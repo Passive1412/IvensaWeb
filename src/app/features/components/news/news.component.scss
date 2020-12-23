@@ -1,0 +1,216 @@
+$primary: #fc980d;
+$secondary: #0f2147;
+$tertiary: #D37C03;
+$text: #ffffff;
+$text2:	#000000;
+
+hr {
+  display: block;
+  border: 1px inset;
+  overflow: hidden;
+}
+
+.row {
+    // height: 100%;
+}
+
+.content > mat-card {
+  margin-bottom: 16px;
+}
+
+.mat-card {
+  min-height: 10vw;
+  padding: 2.5%;
+//   border-radius: 0px 200px 200px 0px;
+  display: grid;
+  place-items: left;
+  -moz-box-shadow: 3px 3px 4px 5px #ccc;
+  -webkit-box-shadow: 3px 3px 4px 5px #ccc;
+  box-shadow: 3px 3px 4px 5px #ccc;
+}
+
+.mat-card::before {
+  content: "";
+
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+
+  position: absolute;
+  /* Center and scale the image nicely */
+  background-position: center;
+  // background-repeat: no-repeat;
+  background-size: inherit;
+  display: grid;
+  place-items: left;
+  background-image: url("../../../../assets/images/about/about_blueprint.png");
+//   border-radius: 0px 200px 200px 0px;
+  filter: invert(52%) sepia(100%) saturate(429%) hue-rotate(354deg)
+    brightness(103%) contrast(98%);
+}
+
+
+
+.test {
+    position: relative;
+    background-position: center;
+    background-size: inherit;
+    display: grid;
+    min-width: 7vw;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1vh;
+}
+
+.date {
+    background: $tertiary;
+    display: inline-block;
+    color: $secondary;
+    padding: 10px;
+    margin-bottom: 1vh;
+    position: relative;
+    // top: 0;
+    // left: 0;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+.mat-card-inside {
+  text-align: left;
+  position: relative;
+  font: bold 14px sans-serif;
+}
+
+.mat-card-content {
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font: 16px sans-serif;
+}
+
+.mat-card-title {
+  color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 42px sans-serif;
+}
+
+.mat-card-subtitle {
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font: bold 28px sans-serif;
+}
+
+.mat-card-image {
+    display: flex;
+  display: grid;
+  place-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  position: inline-block;
+}
+
+.md-button {
+  background: linear-gradient(to bottom right, white, $secondary);
+  color: $text;
+  background-color: $primary;
+  padding: 2.5%;
+  min-width: 88px;
+  border: none;
+  font: bold 14px sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -moz-box-shadow: 3px 3px 4px 5px black;
+  -webkit-box-shadow: 3px 3px 4px 5px black;
+  box-shadow: 3px 3px 4px 5px black;
+
+  text-shadow: 1px 1px 2px black,
+               -1px -1px 2px black;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-shadow: 1px 1px 2px white,
+    -1px -1px 2px white;
+
+    background: linear-gradient(to bottom right, white, $primary);
+    color: $text2;
+    text-decoration: none;
+  }
+}
+
+.middle-pin {
+  // margin-top: -5vw;
+  width: auto;
+  max-width: 75vw;
+  min-width: 25vw;
+  position: relative;
+
+  &::before {
+    content: "";
+    // background: $light-primary;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .middle-pin {
+    &::before {
+      left: 50px;
+    }
+
+    // .timeline-img {
+    // 	left: 50px;
+    // }
+
+    // .timeline-content {
+    // 	max-width: 100%;
+    // 	width: auto;
+    // 	margin-left: 70px;
+    // }
+
+    // .timeline-item {
+
+    // 	&:nth-child(even) {
+
+    // 		.timeline-content {
+    // 			float: none;
+
+    // 		}
+    // 	}
+
+    // 	&:nth-child(odd) {
+
+    // 		.timeline-content {
+
+    // 			&::after {
+    // 				content: '';
+    // 				position: absolute;
+    // 				border-style: solid;
+    // 				width: 0;
+    // 				height: 0;
+    // 				top: 30px;
+    // 				left: -15px;
+    // 				border-width: 10px 15px 10px 0;
+    // 				border-color: transparent #f5f5f5 transparent transparent;
+    // 			}
+    // 		}
+
+    // 	}
+    // }
+  }
+}

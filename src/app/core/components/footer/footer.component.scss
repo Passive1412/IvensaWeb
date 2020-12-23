@@ -1,37 +1,26 @@
 $primary: #fc980d;
-$dark-primary: #0f2147;
+$secondary: #0f2147;
+$secondary2: #0D71FC;
+$tertiary: #D37C03;
+$text: #ffffff;
+$text2:	#000000;
 
 .new_footer_area {
-  background: gray;
+  background: 
+  radial-gradient(circle, transparent 10%, var(--color-v) 90%),
+  $secondary;
+  // linear-gradient(to right, $secondary, rgba(0,0,0,0)),
+  // linear-gradient(to left, $secondary, rgba(0,0,0,0));
+
+  --color-v: black;
   position: relative;
-  width: 100vw;
   height: 100%;
 }
 
 .new_footer_area::before {
   content: "";
-
   margin: 0;
   padding: 0;
-  display: grid;
-  height: 100%;
-  width: 100vw;
-  max-width: 100%;
-  max-height: 100vh;
-  margin: auto;
-
-  width: 100vw;
-  height: 100%;
-  position: absolute;
-  background-image: url("../../../../assets/images/footer/footer_bg.png");
-  min-width: 100vw;
-  /* Center and scale the image nicely */
-  background-position: center;
-  // background-repeat: no-repeat;
-  background-size: inherit;
-  opacity: 90%;
-  filter: blur(25px) saturate(100%) brightness(100%);
-  // filter: brightness(60%) saturate(100%) invert(31%) sepia(34%) saturate(542%) hue-rotate(158deg) brightness(96%) contrast(87%);
 }
 .new_footer_area-inside {
   position: relative;

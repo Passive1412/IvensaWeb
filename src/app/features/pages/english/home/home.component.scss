@@ -13,31 +13,18 @@ $tertiary: #D37C03;
 .background::before {
   content: "";
   position: absolute;
-  // top: 0; left: 0;
   width: 100%;
   height: 100%;
-  // background-image: url("../../../../../assets/images/background/background3.png");
   background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  // filter: blur(25px) saturate(100%) brightness(100%);
-  overflow: hidden;
-  transform: scale(1.05);
-  // transform: scaleY(1.1);
-  // transform: rotate(180);
+
 }
 .background-inside {
   position: relative;
-  // padding: 10%;
-  // text-align: center;
-  // font: bold 48px sans-serif;
 }
 
 .module-infront {
   display: grid;
-  place-items: center;
+  // place-items: center;
   color: black;
   position: relative;
 }
