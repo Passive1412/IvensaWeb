@@ -1,57 +1,53 @@
-$primary: #fc980d;
-
-.intro-header {
-  height: unset !important;
-}
-.top-nav-collapse {
-  background-color: #78909c !important;
-}
-.view {
-  height: 75vh !important;
-}
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
-  }
-}
-.hr-light {
-  border-top: 3px solid #fff;
-  width: 80px;
-}
-@media (max-width: 740px) {
-  .full-height,
-  .full-height body,
-  .full-height header,
-  .full-height header .view {
-    height: 700px;
-  }
+:host {
+  background: rgba(0, 0, 0, 0.1);
 }
 
-// $bgDefault: blue;
-// $bgHighlight: #7537d5;
-// $colDefault: #000000;
+app-sticky-header {
+  z-index: 1000;
+  box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: #ab47bc;
+  font-size: 2rem;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding-top: 75px;
+}
+
+.page {
+  height: 50vh;
+}
+
+.page:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.page:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+// $bgDefault: #000000;
+// $bgHighlight: #0d71fc;
+// $colDefault: #fc980d;
 // $colHighlight: #ffffff;
 // $dropDown: true;
-// .navbar {
-//   -webkit-transition: $bgDefault 0.5s ease-in-out;
-//   -moz-transition:  $bgDefault 0.5s ease-in-out;
-//   -ms-transition:  $bgDefault 0.5s ease-in-out;
-//   -o-transition:  $bgDefault 0.5s ease-in-out;
-//   transition:  $bgDefault 0.5s ease-in-out;
+
+// .marcus {
+//   background: transparent !important;
 // }
+
 // .navbar {
 //   background-color: $bgDefault;
+//   transition: opacity 3.45s;
 //   .navbar-brand {
 //     color: $colDefault;
-//     text-align: center;
 //     &:hover,
 //     &:focus {
 //       color: $colHighlight;
-//       background-image: linear-gradient($bgHighlight, black);
-//       border-radius: 0px 0px 20px 20px;
 //     }
 //   }
 //   .navbar-text {
@@ -197,4 +193,49 @@ $primary: #fc980d;
 //     color: $colHighlight;
 //     background-color: $bgHighlight;
 //   }
+// }
+
+
+// html,
+// body,
+// header,
+// .view {
+//   height: 100%;
+// }
+
+// @media (max-width: 740px) {
+//   html,
+//   body,
+//   header,
+//   .view {
+//     height: 100vh;
+//   }
+// }
+
+// .top-nav-collapse {
+//   background-color: black !important;
+// }
+
+// .navbar:not(.top-nav-collapse) {
+//   // background: transparent !important;
+// }
+
+
+// @media (max-width: 991px) {
+//   .navbar:not(.top-nav-collapse) {
+//     background: black  !important;
+//   }
+// }
+
+// h1 {
+//   letter-spacing: 8px;
+// }
+
+// h5 {
+//   letter-spacing: 3px;
+// }
+
+// .hr-light {
+//   border-top: 3px solid #fff;
+//   width: 80px;
 // }
