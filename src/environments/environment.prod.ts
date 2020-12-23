@@ -1,3 +1,6 @@
+import { ErrorHandler  } from '@angular/core';
+
 export const environment = {
-  production: true
+  production: true,
+  errorHandler: ErrorHandler
 };
