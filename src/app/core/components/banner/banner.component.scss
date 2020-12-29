@@ -1,9 +1,8 @@
 $primary: #fc980d;
-$secondary: #0D71FC;
-$tertiary: #D37C03;
+$secondary: #0d71fc;
+$tertiary: #d37c03;
 
 .view {
-  height: 120vh !important;
   background-color: black;
 }
 
@@ -21,72 +20,39 @@ $tertiary: #D37C03;
   }
 }
 
-.img-1 {
+
+.image-filter  {
   height: 75vh;
-  background:
-  radial-gradient(circle, transparent 20%, var(--color-v) 90%),
-  linear-gradient(to top, black, rgba(0,0,0,0)),
-  var(--image);
+  flex: 1;
+  width: 100vw;
+
+  background: radial-gradient(circle, transparent 20%, var(--color-v) 90%),
+    linear-gradient(to top, black, rgba(0, 0, 0, 0)), var(--image);
   background-position: center center;
   background-size: cover;
-  background-blend-mode:
-  var(--blend-top, normal),
-  var(--blend-bottom, saturation),
-  normal;
+  background-blend-mode: var(--blend-top, normal),
+    var(--blend-bottom, saturation), normal;
 
---image: url("../../../../assets/images/banners/banner1.jpeg");
+  --color-v: black;
 
---color-v: black;
---color: hsla(343,100%,50%,0);
+  &--img-1  {
+    @extend .image-filter;
+    --image: url("../../../../assets/images/banners/banner1.jpeg");
+  }
 
-flex: 1;
-width: 100vw;
+
+  &--img-2  {
+    @extend .image-filter;
+    --image: url("../../../../assets/images/banners/banner2.jpeg");
+  }
+
+  &--img-3  {
+    @extend .image-filter;
+    --image: url("../../../../assets/images/banners/banner4.webp");
+  }
 }
 
-.img-2 {
-  height: 75vh;
-  background:
-  radial-gradient(circle, transparent 20%, var(--color-v) 90%),
-  linear-gradient(to top, black, rgba(0,0,0,0)),
-  var(--image);
-  background-position: center center;
-  background-size: cover;
-  background-blend-mode:
-  var(--blend-top, normal),
-  var(--blend-bottom, saturation),
-  normal;
-
---image: url("../../../../assets/images/banners/banner2.jpeg");
-
---color-v: black;
---color: hsla(343,100%,50%,0);
-
-flex: 1;
-width: 100vw;
-}
-
-.img-3 {
-  height: 75vh;
-  background:
-  radial-gradient(circle, transparent 50%, var(--color-v) 90%),
-  linear-gradient(to bottom, black,  rgba(0,0,0,0)),
-  var(--image);
-  background-position: center center;
-  background-size: cover;
-  background-blend-mode:
-  var(--blend-top, normal),
-  var(--blend-bottom, saturation),
-  normal;
-
---image: url("../../../../assets/images/banners/banner4.webp");
---color-v: black;
---color: hsla(343,100%,50%,0);
-
-flex: 1;
-width: 100vw;
-}
-
-.row-2 {
+.row {
   max-height: inherit;
   max-width: inherit;
   margin-left: 10vw;
@@ -104,9 +70,7 @@ width: 100vw;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 10%;
-  text-shadow: 1px 1px 2px black,
-               -1px -1px 2px black;
-
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
 }
 
 .carousel-item h2 {
@@ -121,20 +85,18 @@ width: 100vw;
   text-transform: uppercase;
   padding: 2.5%;
   border-radius: 10px 10px 10px 10px;
-  background-color:$primary;
+  background-color: $primary;
 
-  text-shadow: 1px 1px 2px black,
-               -1px -1px 2px black;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
 
   margin-bottom: 10%;
 
-  text-align:left;
+  text-align: left;
 
   -moz-box-shadow: 3px 3px 4px 5px black;
   -webkit-box-shadow: 3px 3px 4px 5px black;
   box-shadow: 3px 3px 4px 5px black;
 }
-
 
 .carousel-item h3 {
   font: bold 20px sans-serif;
@@ -145,31 +107,21 @@ width: 100vw;
   padding: 2%;
   text-align: left;
   margin-bottom: 10%;
-  background: rgba(211, 124, 3, 0.50);
+  background: rgba(211, 124, 3, 0.5);
   color: white;
   border-width: 3px;
   border-color: $primary;
   border-style: solid;
-  text-shadow: 1px 1px 2px black,
-               -1px -1px 2px black;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
 }
 .carousel-item h3:hover {
   background: rgba(252, 152, 13, 0.75);
 }
 
-.carousel-caption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-
-  height: 300px;
-}
-
 .carousel-indicators {
   right: 0;
   top: 0;
-  height:75vh;
+  height: 75vh;
   width: 5vw;
   overflow-y: auto;
   overflow-x: hidden;
@@ -181,32 +133,26 @@ width: 100vw;
   bottom: auto;
   left: auto;
   z-index: 99;
-  // justify-content: center;
-  // align-items: center;
   align-content: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-indicators li {
-  width : 2.5px!important;
+  width: 2.5px !important;
   background-color: white;
   height: 10vh !important;
   border-radius: 50% !important;
-  // list-style: inherit;
   margin-left: 1vh;
   max-height: 75vh;
-  // margin: auto;
   padding: auto;
-  // margin-top: 5vh;
-  // line-height: 100%;
 }
 
 .carousel-indicators .active {
-  width : 5px!important;
+  width: 5px !important;
   background-color: $primary;
   height: 10vh !important;
-  border-radius: 50% !important
+  border-radius: 50% !important;
 }
 .carousel-control-next {
   display: inline-block;
@@ -247,9 +193,6 @@ width: 100vw;
 
 .carousel-control-prev-icon {
   transform: rotate(90deg);
-  // justify-content: center;
-
-  // margin-top: auto;
   margin-top: 50%;
 }
 
@@ -265,73 +208,58 @@ width: 100vw;
   background-image: none;
 }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
+.carousel-control-next-icon:after {
+  content: ">";
   font-size: 55px;
   color: $primary;
-  text-shadow: 1px 1px 2px black,
-               -1px -1px 2px black;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
+  content: "<";
   font-size: 55px;
   color: $primary;
-  text-shadow: 1px 1px 2px black,
-  -1px -1px 2px black;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
 }
-
-.content {
-  position: relative;
-  justify-content: space-between;
-  margin-left: 20vh; margin-right: 20vh;
-}
-
 
 .banner-tabs {
+  position: relative;
+  justify-content: space-between;
+  margin-left: 15vh;
+  margin-right: 15vh;
   bottom: 5vw;
 }
 
+.info {
+  background: black;
+}
+
 .mat-card-image {
-  object-fit: cover; /*this makes the image in src fit to the size specified below*/
-  // width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-  // height: 35vh;
-  display: grid;
-  place-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: inherit;
-  min-height: 25vh;
-  // width: 100%;
-  // height: auto;
-  // opacity: 50%;
-  // filter: invert(52%) sepia(100%) saturate(429%) hue-rotate(354deg) brightness(103%) contrast(98%);
+  height: 25vh;
+  background: black;
 }
 
 .mat-card-content {
-  min-height: 16vh;
+  min-height: 18vh;
 }
 
 .banner-info {
   background-color: black;
-  border-radius: 20px 20px 20px 20px;
 }
 .banner-info h1 {
   font: bold 32px sans-serif;
   margin: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 1px 1px 1px white,
-  -1px -1px 1px white;
+  text-shadow: 1px 1px 1px white, -1px -1px 1px white;
 }
 
 .banner-info p {
   font: bold 14px sans-serif;
   margin: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -353,13 +281,12 @@ width: 100vw;
   padding: 2%;
   text-align: center;
   margin-bottom: 10%;
-  background: rgba(211, 124, 3, 0.50);
+  background: rgba(211, 124, 3, 0.5);
   color: white;
   border-width: 3px;
   border-color: $primary;
   border-style: solid;
-  text-shadow: 1px 1px 2px black,
-               -1px -1px 2px black;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
 }
 .banner-info h3:hover {
   background: rgba(252, 152, 13, 0.75);

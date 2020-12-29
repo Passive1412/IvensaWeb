@@ -1,12 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
-@import "~@ag-grid-community/all-modules/dist/styles/ag-grid";
-@import "~@ag-grid-community/all-modules/dist/styles/ag-theme-balham";
-
-@import "~@ng-select/ng-select/scss/default.theme.scss";
 
 @import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/css/font-awesome.min.css";
+
+@import "~animate.css/animate.css";
 
 $primary: #fc980d;
 $dark-primary: #0f2147;

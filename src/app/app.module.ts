@@ -20,12 +20,12 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-// AgGrid Modules
-import { AgGridModule } from '@ag-grid-community/angular';
-
 // App Modules
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+//
+import { NgwWowModule } from 'ngx-wow';
 
 // Environment
 import { environment } from 'src/environments/environment';
@@ -48,7 +48,7 @@ import { TimelineComponent } from './features/components/timeline/timeline.compo
 import { AboutComponent } from './features/components/about/about.component';
 import { NewsComponent } from './features/components/news/news.component';
 import { FeaturesComponent } from './features/components/features/features.component';
-// import { BannerComponent } from './pages/danish/banner/banner.component';
+import { CameraAniComponent } from './core/components/camera-ani/camera-ani.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -68,13 +68,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AboutComponent,
     NewsComponent,
     FeaturesComponent,
-    //NavigationComponent,
-    //BannerComponent,
+    CameraAniComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents([]),
     HttpClientModule,
     BrowserAnimationsModule,
     NgbModule,
@@ -83,6 +81,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MatButtonModule,
     FlexLayoutModule,
     NgVerticalTimelineModule,
+    NgwWowModule,
     MDBBootstrapModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
