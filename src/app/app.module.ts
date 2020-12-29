@@ -49,6 +49,9 @@ import { AboutComponent } from './features/components/about/about.component';
 import { NewsComponent } from './features/components/news/news.component';
 import { FeaturesComponent } from './features/components/features/features.component';
 import { CameraAniComponent } from './core/components/camera-ani/camera-ani.component';
+import { TeamComponent } from './features/pages/english/team/team.component';
+import { RetailtechLabComponent } from './features/pages/english/retailtech-lab/retailtech-lab.component';
+import { RequestDemoPageComponent } from './features/pages/english/request-demo-page/request-demo-page.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -69,6 +72,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     NewsComponent,
     FeaturesComponent,
     CameraAniComponent,
+    TeamComponent,
+    RetailtechLabComponent,
+    RequestDemoPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { from } from 'rxjs';
 
-// import {  } from './core';
-
-import { HomeComponent, NotFoundComponent } from './features/pages/english';
+import {
+  HomeComponent,
+  NotFoundComponent,
+  TeamComponent,
+  RetailtechLabComponent,
+  RequestDemoPageComponent,
+} from './features/pages/english';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '*', redirectTo: '' },
+
+  { path: 'team', component: TeamComponent },
+  { path: 'retailtech-lab', component: RetailtechLabComponent },
+  { path: 'request-demo-page', component: RequestDemoPageComponent },
+
+
   { path: '**', component: NotFoundComponent },
+  { path: '*', redirectTo: '' },
+
 ];
 
 @NgModule({

@@ -19,37 +19,32 @@ mat-toolbar {
 }
 
 .mat-card {
-  min-height: 10vw;
+  // height: 10vw;
   padding: 2.5%;
-//   border-radius: 0px 200px 200px 0px;
+  border-radius: 200px 200px 200px 200px;
   display: grid;
   place-items: left;
-  -moz-box-shadow: 3px 3px 4px 5px #ccc;
-  -webkit-box-shadow: 3px 3px 4px 5px #ccc;
-  box-shadow: 3px 3px 4px 5px #ccc;
+  -moz-box-shadow:    0px 0px 20px 8px #ccc;
+  -webkit-box-shadow: 0px 0px 20px 8px #ccc;
+  box-shadow:         0px 0px 20px 8px #ccc;
 }
 
 .mat-card::before {
   content: "";
-
-  margin: 0;
-  padding: 0;
   display: grid;
   height: 100%;
   width: 100vw;
   max-width: 100%;
-  max-height: 100vh;
-  margin: auto;
 
   position: absolute;
   /* Center and scale the image nicely */
   background-position: center;
-  // background-repeat: no-repeat;
   background-size: inherit;
   display: grid;
   place-items: left;
+
   background-image: url("../../../../assets/images/about/about_blueprint.png");
-//   border-radius: 0px 200px 200px 0px;
+  border-radius: 200px 200px 200px 200px;
   filter: invert(52%) sepia(100%) saturate(429%) hue-rotate(354deg)
     brightness(103%) contrast(98%);
 }
@@ -130,7 +125,6 @@ mat-toolbar {
 }
 
 .middle-pin {
-  // margin-top: -5vw;
   width: auto;
   max-width: 75vw;
   min-width: 25vw;
@@ -138,7 +132,6 @@ mat-toolbar {
 
   &::before {
     content: "";
-    // background: $light-primary;
     width: 5px;
     height: 95%;
     position: absolute;
@@ -147,50 +140,8 @@ mat-toolbar {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .left-pin {
-    &::before {
-      left: 50px;
-    }
-
-    // .timeline-img {
-    // 	left: 50px;
-    // }
-
-    // .timeline-content {
-    // 	max-width: 100%;
-    // 	width: auto;
-    // 	margin-left: 70px;
-    // }
-
-    // .timeline-item {
-
-    // 	&:nth-child(even) {
-
-    // 		.timeline-content {
-    // 			float: none;
-
-    // 		}
-    // 	}
-
-    // 	&:nth-child(odd) {
-
-    // 		.timeline-content {
-
-    // 			&::after {
-    // 				content: '';
-    // 				position: absolute;
-    // 				border-style: solid;
-    // 				width: 0;
-    // 				height: 0;
-    // 				top: 30px;
-    // 				left: -15px;
-    // 				border-width: 10px 15px 10px 0;
-    // 				border-color: transparent #f5f5f5 transparent transparent;
-    // 			}
-    // 		}
-
-    // 	}
-    // }
-  }
+.icon {
+  display: flex;
+  justify-content: center;
+  font-size: 1000%;
 }
