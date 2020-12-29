@@ -20,8 +20,7 @@ $tertiary: #d37c03;
   }
 }
 
-
-.image-filter  {
+.image-filter {
   height: 75vh;
   flex: 1;
   width: 100vw;
@@ -35,18 +34,17 @@ $tertiary: #d37c03;
 
   --color-v: black;
 
-  &--img-1  {
+  &--img-1 {
     @extend .image-filter;
     --image: url("../../../../assets/images/banners/banner1.jpeg");
   }
 
-
-  &--img-2  {
+  &--img-2 {
     @extend .image-filter;
     --image: url("../../../../assets/images/banners/banner2.jpeg");
   }
 
-  &--img-3  {
+  &--img-3 {
     @extend .image-filter;
     --image: url("../../../../assets/images/banners/banner4.webp");
   }
@@ -119,6 +117,8 @@ $tertiary: #d37c03;
 }
 
 .carousel-indicators {
+  justify-content: center;
+  width: 90%;
   right: 0;
   top: 0;
   height: 75vh;
@@ -126,8 +126,10 @@ $tertiary: #d37c03;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  position: absolute;
-  display: block;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   bottom: auto;
@@ -138,67 +140,63 @@ $tertiary: #d37c03;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.carousel-indicators ol {
+  background: red;
+}
+
 .carousel-indicators li {
+  margin: 20px;
   width: 2.5px !important;
   background-color: white;
   height: 10vh !important;
   border-radius: 50% !important;
-  margin-left: 1vh;
-  max-height: 75vh;
-  padding: auto;
+  // padding: auto;
+  // border-radius: 10vw;
+  // border-style: solid;
+  // border-color: red;
 }
-
 .carousel-indicators .active {
   width: 5px !important;
   background-color: $primary;
   height: 10vh !important;
   border-radius: 50% !important;
 }
-.carousel-control-next {
-  display: inline-block;
-  right: 5vw;
-  bottom: 0;
-  height: 37.5vh;
-  width: 20vw;
-  overflow-y: auto;
-  overflow-x: hidden;
 
-  -webkit-overflow-scrolling: touch;
-  position: absolute;
-  display: block;
-  margin: 0;
-  padding: 0;
-  top: auto;
-  left: auto;
-  z-index: 99;
-}
 .carousel-control-prev {
-  display: inline-block;
-  right: 5vw;
-  bottom: auto;
+  flex-direction: column;
+  align-items: center;
+
+  right: 0;
+  left: auto;
   height: 37.5vh;
   width: 20vw;
-  overflow-y: auto;
-  overflow-x: hidden;
 
   -webkit-overflow-scrolling: touch;
-  position: absolute;
-  display: block;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: auto;
-  z-index: 99;
+  // z-index: 99;
+
+  // background-color: red;
+}
+
+.carousel-control-next {
+  flex-direction: column;
+  align-items: center;
+
+  top: auto;
+  height: 37.5vh;
+  width: 20vw;
+
+  -webkit-overflow-scrolling: touch;
+  // z-index: 99;
+
+  // background-color: blue;
 }
 
 .carousel-control-prev-icon {
   transform: rotate(90deg);
-  margin-top: 50%;
 }
 
 .carousel-control-next-icon {
   transform: rotate(90deg);
-  margin-top: 0%;
 }
 
 .carousel-control-prev-icon,
